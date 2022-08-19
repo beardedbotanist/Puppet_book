@@ -1,4 +1,0 @@
-<% | Array[String] $users | -%>
-AllowUsers<% $users.each | $user | { -%>
- <%= $user -%>
-<% } %> 

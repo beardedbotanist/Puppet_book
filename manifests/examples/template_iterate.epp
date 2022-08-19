@@ -1,3 +1,0 @@
-<% $facts['networking']['interfaces'].each |String $interface, Hash $attrs| { -%>
-interface <%= $interface %>;
-<% } -%>

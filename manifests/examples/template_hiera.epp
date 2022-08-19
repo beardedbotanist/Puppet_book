@@ -1,3 +1,0 @@
-AllowUsers<% lookup('users').each | $user | { -%>
- <%= $user -%>
-<% } %> 
