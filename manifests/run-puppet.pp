@@ -4,6 +4,11 @@ file { '/usr/local/bin/run-puppet':
   mode   => '0755',
 }
 
-cron::hourly { 'run-puppet':
-  command => '/usr/local/bin/run-puppet',
+cron::job { 'run-puppet':
+    minute  => '*/15',
+    hour    => '*',
+    date    => '*',
+    month   => '*',
+    weekday => '*',
+    command => '/usr/local/bin/run-puppet',
   }
